@@ -10,6 +10,8 @@ public class PlayerInput : MonoBehaviour {
 
     private bool isJumping;
 
+  
+
     private void Awake() {
         controller = GetComponent<CharacterController>();
     }
@@ -29,7 +31,12 @@ public class PlayerInput : MonoBehaviour {
             isJumping = true;
             StartCoroutine(Jump());
         }
+       
+
+
     }
+
+   
 
     private IEnumerator Jump() {
         // avoid crawling up slopes during the jump

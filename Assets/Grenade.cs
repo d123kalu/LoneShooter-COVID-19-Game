@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour
 {
-    public float delay = 3f;
+    public float delay = 2f;
     public float radius = 50f;
     public float force = 1000f;
 
@@ -33,8 +33,8 @@ public class Grenade : MonoBehaviour
     void Explode()
     {
         Instantiate(explosioneffect, transform.position, transform.rotation);
-        Collider [] colliders = Physics.OverlapSphere(transform.position, radius);
-        foreach (Collider nearbyObject in colliders)
+        Collider [] collidersToDestroy = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider nearbyObject in collidersToDestroy)
         {
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             if(rb != null)
@@ -48,6 +48,19 @@ public class Grenade : MonoBehaviour
                 dest.Destroy(); 
             }
         }
+
+
+        Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider nearbyObject in collidersToMove)
+        {
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddExplosionForce(force, transform.position, radius);
+            }
+        }
+
+
 
         Destroy(gameObject);
 
