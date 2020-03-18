@@ -13,7 +13,7 @@ public class FirstPersonInput : MonoBehaviour {
 
     public Text screen;
 
-    public float throwForce = 40f;
+    public float throwForce = 30f;
     public GameObject grenadePrefab;
 
     void Update() {
