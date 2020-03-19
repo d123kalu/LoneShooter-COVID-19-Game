@@ -16,6 +16,7 @@ public class FirstPersonInput : MonoBehaviour {
     public float throwForce = 30f;
     public GameObject grenadePrefab;
 
+
     void Update() {
         if (Input.GetButtonDown("Fire1")) {
             Shoot();
@@ -46,7 +47,7 @@ public class FirstPersonInput : MonoBehaviour {
             Debug.Log("Shot an enemy thing:" + hit.collider.name);
 
             Health enemyHealth = hit.collider.GetComponent<Health>();
-            enemyHealth.TakeDamage(10);
+            enemyHealth.TakeDamage(25);
             if (enemyHealth.isDead) {
                 hit.collider.gameObject.SetActive(false);
 
