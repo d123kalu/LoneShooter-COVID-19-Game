@@ -41,15 +41,17 @@ public class Grenade : MonoBehaviour
             {
                 rb.AddExplosionForce(force, transform.position, radius);
             }
-
             Destructible dest = nearbyObject.GetComponent<Destructible>();
-            if(dest != null)
+            DestructibleZombie dest2 = nearbyObject.GetComponent<DestructibleZombie>();
+            if (dest != null)
             {
-               dest.Destroy(); 
+                dest.Destroy();
+            }
+            if (dest2 != null)
+            {
+                dest2.Destroy();
             }
         }
-
-
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider nearbyObject in collidersToMove)
         {
@@ -59,12 +61,6 @@ public class Grenade : MonoBehaviour
                 rb.AddExplosionForce(force, transform.position, radius);
             }
         }
-
-
-
         Destroy(gameObject);
-
-        Debug.Log("BOOM!!");
-
     }
 }

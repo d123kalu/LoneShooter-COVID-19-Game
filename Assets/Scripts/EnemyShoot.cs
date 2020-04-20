@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour {
     public float range = 100f;
-    public int damage = 25;
+    public int damage = 100;
     public GameObject player;
     public float coolDown = 1.0f;
     public float lastShootTime = 0.0f;

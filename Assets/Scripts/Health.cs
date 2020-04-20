@@ -6,7 +6,14 @@ public class Health : MonoBehaviour {
     public int hp = 100;
     public bool isDead = false;
 
+    public GameObject deadVersion;
 
+    static Animator anim;
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
 
     public void TakeDamage(int damage) {
@@ -16,6 +23,11 @@ public class Health : MonoBehaviour {
             this.hp = 0;
             this.isDead = true;
 
+            //anim.SetBool("isDead", true);
+
+            Destroy(gameObject);
+            //Instantiate(deadVersion);
+            Instantiate(deadVersion, transform.position, transform.rotation);
 
         } 
         else {
