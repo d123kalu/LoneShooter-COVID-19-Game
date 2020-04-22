@@ -23,8 +23,9 @@ public class GetSupplies : MonoBehaviour
     {
         if (col.gameObject.tag == "Supplies")
         {
-            GoHomePanel.SetActive(true);
+            //GoHomePanel.SetActive(true);
             //this.gameObject.GetComponent<WaypointMaker>().enabled = false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (col.gameObject.tag == "Finish" )
@@ -40,7 +41,7 @@ public class GetSupplies : MonoBehaviour
             GoHomePanel.SetActive(false);
             col.gameObject.SetActive(false);
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //Destroy(col.gameObject);
 
 

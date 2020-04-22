@@ -36,7 +36,7 @@ public class AgentMovement2 : MonoBehaviour
                 anim.SetBool("isAttacking", false);
                 anim.SetBool("isRunning", true);
 
-                agent.speed = 2;
+                agent.speed = 3;
 
                 if (dist < attackingdistance)
                 {

@@ -49,6 +49,7 @@ public class NPC : MonoBehaviour
                 FindObjectOfType<DialogueSystem>().NPCName();
 
                 anim.SetBool("isTalking", true);
+                instructors.text = "Press 'F' to continue conversation";
             }
         }
     }
@@ -59,7 +60,7 @@ public class NPC : MonoBehaviour
         this.gameObject.GetComponent<NPC>().enabled = false;
 
         anim.SetBool("isTalking", false);
-        instructors.text = "Follow The Mission Checkpoint";
+        instructors.text = "Follow The Mission Checkpoint to reach the Camp Entrance";
     }
 }
 

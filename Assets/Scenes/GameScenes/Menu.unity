@@ -1353,6 +1353,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Movement: Arrow Keys + Mouse
 
+    Jump: Space Bar
+
     Grenade: Enter Key
 
     Gun Switch: Mouse Scroll

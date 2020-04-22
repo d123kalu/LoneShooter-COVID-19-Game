@@ -485,7 +485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596.02, y: 60.1}
+  m_AnchoredPosition: {x: 687, y: 60.1}
   m_SizeDelta: {x: 290.85, y: 120.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726200195
@@ -685,8 +685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116, y: -14}
-  m_SizeDelta: {x: 1133.2, y: 730.9}
+  m_AnchoredPosition: {x: -170.84, y: -14}
+  m_SizeDelta: {x: 1424.8, y: 730.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091111590
 MonoBehaviour:
@@ -719,19 +719,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In 2020, The COVID -19 Pandemic stromed the world
+  m_Text: 'In 2020, The COVID -19 Pandemic stormed the world.
 
-    It started as viral flu, and claimed thousands of lives
+    It started as viral flu, and claimed thousands of lives.
 
-    A vaccine was developed, in June 2021
+    A vaccine was developed, in June 2021.
 
-    However, a large of factions of people refused the vaccine and the end began
+    However, large of factions of people refused the vaccine and the end began.
 
-    The virus evolved and claimed more lives.
+    The virus evolved and turned people into mindless Zombies.
 
-    COVID - 19 turned people into mindless Zombies that spreads the virus
-
-    The world is now a wastland, with people scavenging for resources'
+    The world is now a wastland, with people scavenging for resources.'
 --- !u!222 &1091111591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -983,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596.02, y: -362}
+  m_AnchoredPosition: {x: 687, y: -362}
   m_SizeDelta: {x: 290.85, y: 120.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1769860903
